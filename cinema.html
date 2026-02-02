@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>IFRS || Cinema</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/cinema.css">
+</head>
+<body class="bg-black">
+    <main class="main-layout">
+        <aside class="movie-info-card">
+            <div id="moviePoster" class="poster-preview"></div>
+            <div class="info-content">
+                <div id="summaryBadges" class="badge-group"></div>
+                <h1 id="summaryTitle">--</h1>
+                <p class="session-detail"><i class="far fa-clock"></i> Sessão: <span id="summaryTime">--</span></p>
+                <div class="divider"></div>
+                <h3>Sinopse</h3>
+                <p class="lorem-text">
+                    Em um futuro onde a tecnologia e a emoção se fundem, um grupo de exploradores 
+                    precisa decidir o destino da humanidade enquanto enfrentam seus próprios fantasmas.
+                </p>
+            </div>
+        </aside>
+
+        <section class="seating-area">
+    <div class="screen-container">
+        <div class="screen-curve"></div>
+        <span>TELA</span>
+    </div>
+
+    <div class="selection-controls">
+        <span>Selecione a Modalidade</span>
+        <div class="radio-group">
+            <label class="radio-btn active" data-price="30">
+                <input type="radio" name="tkType" value="Inteira" checked>
+                <span>Inteira</span>
+                <small>R$ 30,00</small>
+            </label>
+            <label class="radio-btn" data-price="15">
+                <input type="radio" name="tkType" value="Meia">
+                <span>Meia Entrada</span>
+                <small>R$ 15,00</small>
+            </label>
+        </div>
+    </div>
+
+    <div id="seatsGrid" class="cinema-grid"></div>
+
+    <div class="map-legend">
+        <span><div class="dot free"></div> Livre</span>
+        <span><div class="dot int"></div> Inteira</span>
+        <span><div class="dot half"></div> Meia</span>
+        <span><div class="dot busy"></div> Ocupado</span>
+    </div>
+</section>
+
+        <aside class="checkout-area">
+            <div class="ticket-receipt">
+                <div class="receipt-header">RESUMO DA RESERVA</div>
+                <div id="orderList" class="receipt-body">
+                    <div class="empty-state">Selecione seus assentos na sala...</div>
+                </div>
+                <div class="receipt-footer">
+                    <div class="total-line">
+                        <span>Total</span>
+                        <span id="totalDisplay" class="yellow-text">R$ 0,00</span>
+                    </div>
+                    <button id="btnFinish" class="btn-confirm" disabled>CONFIRMAR COMPRA</button>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <script src="assets/js/cinema.js"></script>
+</body>
+</html>

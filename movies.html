@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>IFRS || Cinema</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/movies.css" />
+  </head>
+  <body>
+    <nav class="nav-streaming">
+      <div class="logo">IFRS<strong class="yellow-text">Cinema</strong></div>
+      <div class="nav-actions">
+        <button onclick="logout()" class="logout-pill">
+          Sair <i class="fas fa-sign-out-alt"></i>
+        </button>
+      </div>
+    </nav>
+
+    <header id="heroBanner" class="hero-section">
+      <div class="hero-overlay">
+        <div class="hero-data">
+          <span class="badge-yellow">#1 EM VENDAS</span>
+          <h1 id="heroTitle">Carregando...</h1>
+          <p id="heroDesc">
+            Explore as melhores sessões disponíveis para hoje.
+          </p>
+          <div class="hero-btns">
+            <button class="btn-main">
+              <i class="fas fa-play"></i> Assistir Trailer
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="movies-content">
+      <section class="movie-row">
+        <h2 class="row-title">Destaques da Semana</h2>
+        <div id="grid-highlights" class="movies-grid"></div>
+      </section>
+
+      <section class="movie-row">
+        <h2 class="row-title">Recomendados para Você</h2>
+        <div id="grid-foryou" class="movies-grid"></div>
+      </section>
+
+      <section class="movie-row">
+        <h2 class="row-title">Em Breve nos Cinemas</h2>
+        <div id="grid-upcoming" class="movies-grid upcoming"></div>
+      </section>
+    </main>
+
+    <script src="assets/js/movies.js"></script>
+  </body>
+</html>
