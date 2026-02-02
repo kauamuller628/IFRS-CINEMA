@@ -1,0 +1,24 @@
+:root {
+    --yellow: #ffcc00;
+    --yellow-hover: #e6b800;
+    --black: #050505;
+    --dark-grey: #121212;
+    --card-bg: #1c1c1c;
+    --text-white: #ffffff;
+    --text-muted: #888888;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--text-white);
+    overflow-x: hidden;
+}
+
+.yellow-text { color: var(--yellow); }
